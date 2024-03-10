@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/cmake/module3/addition.h
+
+/workspaces/cmake/module3/division.h
+
+/workspaces/cmake/module3/main.cpp
+iostream
+-
+addition.h
+/workspaces/cmake/module3/addition.h
+division.h
+/workspaces/cmake/module3/division.h
+print_result.h
+/workspaces/cmake/module3/print_result.h
+
+/workspaces/cmake/module3/print_result.h
+
