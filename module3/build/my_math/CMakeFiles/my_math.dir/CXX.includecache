@@ -10,17 +10,11 @@
 
 ../my_math/include/my_math/division.h
 
-../my_print/include/my_print/print_result.h
-iostream
--
-
-/workspaces/cmake/module3/main.cpp
-iostream
--
+/workspaces/cmake/module3/my_math/src/addition.cpp
 my_math/addition.h
-/workspaces/cmake/module3/my_math/addition.h
+/workspaces/cmake/module3/my_math/src/my_math/addition.h
+
+/workspaces/cmake/module3/my_math/src/division.cpp
 my_math/division.h
-/workspaces/cmake/module3/my_math/division.h
-my_print/print_result.h
-/workspaces/cmake/module3/my_print/print_result.h
+/workspaces/cmake/module3/my_math/src/my_math/division.h
 

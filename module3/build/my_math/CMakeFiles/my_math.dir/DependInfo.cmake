@@ -4,20 +4,18 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/workspaces/cmake/module3/main.cpp" "/workspaces/cmake/module3/build/CMakeFiles/calculator.dir/main.cpp.o"
+  "/workspaces/cmake/module3/my_math/src/addition.cpp" "/workspaces/cmake/module3/build/my_math/CMakeFiles/my_math.dir/src/addition.cpp.o"
+  "/workspaces/cmake/module3/my_math/src/division.cpp" "/workspaces/cmake/module3/build/my_math/CMakeFiles/my_math.dir/src/division.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../my_math/include"
-  "../my_print/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/workspaces/cmake/module3/build/my_math/CMakeFiles/my_math.dir/DependInfo.cmake"
-  "/workspaces/cmake/module3/build/my_print/CMakeFiles/my_print.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

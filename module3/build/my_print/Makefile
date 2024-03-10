@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles /workspaces/cmake/module3/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles /workspaces/cmake/module3/build/my_print/CMakeFiles/progress.marks
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_print/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_print/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_print/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_print/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named calculator
+# Convenience name for target.
+my_print/CMakeFiles/my_print.dir/rule:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_print/CMakeFiles/my_print.dir/rule
+.PHONY : my_print/CMakeFiles/my_print.dir/rule
 
-# Build rule for target.
-calculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 calculator
-.PHONY : calculator
+# Convenience name for target.
+my_print: my_print/CMakeFiles/my_print.dir/rule
 
-# fast build rule for target.
-calculator/fast:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
-.PHONY : calculator/fast
-
-#=============================================================================
-# Target rules for targets named my_math
-
-# Build rule for target.
-my_math: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_math
-.PHONY : my_math
-
-# fast build rule for target.
-my_math/fast:
-	$(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
-.PHONY : my_math/fast
-
-#=============================================================================
-# Target rules for targets named my_print
-
-# Build rule for target.
-my_print: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_print
 .PHONY : my_print
 
 # fast build rule for target.
 my_print/fast:
-	$(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/build
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/build
 .PHONY : my_print/fast
 
-main.o: main.cpp.o
+src/print_result.o: src/print_result.cpp.o
 
-.PHONY : main.o
+.PHONY : src/print_result.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/print_result.cpp.o:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print_result.cpp.o
+.PHONY : src/print_result.cpp.o
 
-main.i: main.cpp.i
+src/print_result.i: src/print_result.cpp.i
 
-.PHONY : main.i
+.PHONY : src/print_result.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/print_result.cpp.i:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print_result.cpp.i
+.PHONY : src/print_result.cpp.i
 
-main.s: main.cpp.s
+src/print_result.s: src/print_result.cpp.s
 
-.PHONY : main.s
+.PHONY : src/print_result.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/print_result.cpp.s:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print_result.cpp.s
+.PHONY : src/print_result.cpp.s
 
 # Help Target
 help:
@@ -184,12 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... calculator"
-	@echo "... my_math"
 	@echo "... my_print"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/print_result.o"
+	@echo "... src/print_result.i"
+	@echo "... src/print_result.s"
 .PHONY : help
 
 
@@ -201,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

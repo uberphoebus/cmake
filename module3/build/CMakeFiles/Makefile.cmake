@@ -96,8 +96,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
-  "../my_math_dir/CMakeLists.txt"
-  "../my_print_dir/CMakeLists.txt"
+  "../my_math/CMakeLists.txt"
+  "../my_print/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -114,13 +114,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "my_math_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "my_print_dir/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_math/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_print/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/calculator.dir/DependInfo.cmake"
-  "my_math_dir/CMakeFiles/my_math.dir/DependInfo.cmake"
-  "my_print_dir/CMakeFiles/my_print.dir/DependInfo.cmake"
+  "my_math/CMakeFiles/my_math.dir/DependInfo.cmake"
+  "my_print/CMakeFiles/my_print.dir/DependInfo.cmake"
   )

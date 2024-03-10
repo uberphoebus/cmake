@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/workspaces/cmake/module3/my_math/include -I/workspaces/cmake/module3/my_print/include 
+CXX_INCLUDES = -I/workspaces/cmake/module3/my_print/include 
 

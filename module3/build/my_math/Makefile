@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles /workspaces/cmake/module3/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles /workspaces/cmake/module3/build/my_math/CMakeFiles/progress.marks
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_math/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/cmake/module3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_math/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,84 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_math/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_math/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named calculator
+# Convenience name for target.
+my_math/CMakeFiles/my_math.dir/rule:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f CMakeFiles/Makefile2 my_math/CMakeFiles/my_math.dir/rule
+.PHONY : my_math/CMakeFiles/my_math.dir/rule
 
-# Build rule for target.
-calculator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 calculator
-.PHONY : calculator
+# Convenience name for target.
+my_math: my_math/CMakeFiles/my_math.dir/rule
 
-# fast build rule for target.
-calculator/fast:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
-.PHONY : calculator/fast
-
-#=============================================================================
-# Target rules for targets named my_math
-
-# Build rule for target.
-my_math: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_math
 .PHONY : my_math
 
 # fast build rule for target.
 my_math/fast:
-	$(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
 .PHONY : my_math/fast
 
-#=============================================================================
-# Target rules for targets named my_print
+src/addition.o: src/addition.cpp.o
 
-# Build rule for target.
-my_print: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 my_print
-.PHONY : my_print
-
-# fast build rule for target.
-my_print/fast:
-	$(MAKE) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/build
-.PHONY : my_print/fast
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/addition.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/addition.cpp.o:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/addition.cpp.o
+.PHONY : src/addition.cpp.o
 
-main.i: main.cpp.i
+src/addition.i: src/addition.cpp.i
 
-.PHONY : main.i
+.PHONY : src/addition.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/addition.cpp.i:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/addition.cpp.i
+.PHONY : src/addition.cpp.i
 
-main.s: main.cpp.s
+src/addition.s: src/addition.cpp.s
 
-.PHONY : main.s
+.PHONY : src/addition.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/addition.cpp.s:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/addition.cpp.s
+.PHONY : src/addition.cpp.s
+
+src/division.o: src/division.cpp.o
+
+.PHONY : src/division.o
+
+# target to build an object file
+src/division.cpp.o:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/division.cpp.o
+.PHONY : src/division.cpp.o
+
+src/division.i: src/division.cpp.i
+
+.PHONY : src/division.i
+
+# target to preprocess a source file
+src/division.cpp.i:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/division.cpp.i
+.PHONY : src/division.cpp.i
+
+src/division.s: src/division.cpp.s
+
+.PHONY : src/division.s
+
+# target to generate assembly for a file
+src/division.cpp.s:
+	cd /workspaces/cmake/module3/build && $(MAKE) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/division.cpp.s
+.PHONY : src/division.cpp.s
 
 # Help Target
 help:
@@ -184,12 +187,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... calculator"
 	@echo "... my_math"
-	@echo "... my_print"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/addition.o"
+	@echo "... src/addition.i"
+	@echo "... src/addition.s"
+	@echo "... src/division.o"
+	@echo "... src/division.i"
+	@echo "... src/division.s"
 .PHONY : help
 
 
@@ -201,6 +205,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /workspaces/cmake/module3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
