@@ -112,8 +112,8 @@ my_print_dir/clean: my_print_dir/CMakeFiles/my_print.dir/clean
 # Target rules for target CMakeFiles/calculator.dir
 
 # All Build rule for target.
-CMakeFiles/calculator.dir/all: my_math_dir/CMakeFiles/my_math.dir/all
 CMakeFiles/calculator.dir/all: my_print_dir/CMakeFiles/my_print.dir/all
+CMakeFiles/calculator.dir/all: my_math_dir/CMakeFiles/my_math.dir/all
 	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/depend
 	$(MAKE) -f CMakeFiles/calculator.dir/build.make CMakeFiles/calculator.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/cmake/module3/build/CMakeFiles --progress-num=1,2 "Built target calculator"
