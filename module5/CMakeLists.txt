@@ -123,5 +123,20 @@ message("outside before ${Name}")
 
 set(Name Charlie)
 message("Root dir   : before adding subdir ${Name}")
-add_subdirectory(demo_subdirectory_scope)
+# add_subdirectory(demo_subdirectory_scope)
 message("Root dir   : after adding subdir ${Name}")
+
+# macro
+function(print_detail_func name_var)
+    message("my name is ${name_var}")
+    set(name_var abc)
+    message("my name is ${name_var}")
+endfunction()
+print_detail_func(Charlie)
+
+macro(print_detail_macro name_var)
+    message("my name is ${name_var}")
+    set(name_var abc)
+    message("my name is ${name_var}")
+endmacro()
+print_detail_macro(Charlie)
