@@ -12,4 +12,8 @@ print_result.cpp)
 add_executable(calculator
 main.cpp)
 
-target_link_libraries(calculator my_math my_print)
+add_executable(calculator_dup
+main.cpp)
+
+target_link_libraries(calculator PRIVATE my_math my_print)
+target_link_libraries(calculator_dup PRIVATE my_math my_print)
