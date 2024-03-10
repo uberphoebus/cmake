@@ -112,5 +112,16 @@ print_detail_argv(Name Bob Alice)
 # scope
 set(Name Charlie)
 function(print_detail_scope)
-    
+    message("before change ${Name}")
+    # set(Name Bob)
+    set(Name Bob PARENT_SCOPE)
+    message("after change ${Name}")
 endfunction()
+message("outside before ${Name}")
+print_detail_scope()
+message("outside before ${Name}")
+
+set(Name Charlie)
+message("Root dir   : before adding subdir ${Name}")
+add_subdirectory(demo_subdirectory_scope)
+message("Root dir   : after adding subdir ${Name}")

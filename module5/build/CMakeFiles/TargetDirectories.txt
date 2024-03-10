@@ -1,0 +1,4 @@
+/workspaces/cmake/module5/build/CMakeFiles/rebuild_cache.dir
+/workspaces/cmake/module5/build/CMakeFiles/edit_cache.dir
+/workspaces/cmake/module5/build/demo_subdirectory_scope/CMakeFiles/rebuild_cache.dir
+/workspaces/cmake/module5/build/demo_subdirectory_scope/CMakeFiles/edit_cache.dir
