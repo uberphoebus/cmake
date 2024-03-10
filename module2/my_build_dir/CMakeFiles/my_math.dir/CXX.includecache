@@ -6,3 +6,7 @@
 
 #IncludeRegexTransform: 
 
+/workspaces/cmake/module2/addition.cpp
+
+/workspaces/cmake/module2/division.cpp
+
