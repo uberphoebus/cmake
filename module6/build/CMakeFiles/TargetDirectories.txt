@@ -1,0 +1,9 @@
+/workspaces/cmake/module6/build/CMakeFiles/rebuild_cache.dir
+/workspaces/cmake/module6/build/CMakeFiles/edit_cache.dir
+/workspaces/cmake/module6/build/CMakeFiles/calculator.dir
+/workspaces/cmake/module6/build/my_math/CMakeFiles/rebuild_cache.dir
+/workspaces/cmake/module6/build/my_math/CMakeFiles/edit_cache.dir
+/workspaces/cmake/module6/build/my_math/CMakeFiles/my_math.dir
+/workspaces/cmake/module6/build/my_print/CMakeFiles/rebuild_cache.dir
+/workspaces/cmake/module6/build/my_print/CMakeFiles/edit_cache.dir
+/workspaces/cmake/module6/build/my_print/CMakeFiles/my_print.dir
